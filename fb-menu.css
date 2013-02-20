@@ -74,7 +74,7 @@ body.menu-moving #page {
         display: block;
         width: 24px;
         height: 21px;
-        background: transparent url(https://s-static.ak.facebook.com/rsrc.php/v1/y8/r/NwLTcDwF0zP.png) no-repeat;
+        background: transparent url(NwLTcDwF0zP.png) no-repeat;
     }
     #page > header .icons {
         position: absolute;
@@ -107,7 +107,7 @@ body.menu-moving #page {
     #page .story .contents .actions {
         color: gray;
         margin: 6px 25px 3px 0;
-        
+
         font-size: 12px;
         line-height: 15px;
     }
@@ -138,7 +138,7 @@ body.menu-moving #page {
     #page .story .contents .meta span img {
         vertical-align: text-bottom;
     }
-    
+
 #composer {
     display: -webkit-box;
     display: -moz-box;
@@ -184,7 +184,7 @@ body.menu-moving #page {
     width: 260px;
     top: 0;
     left: 0;
-    
+
 }
 body.menu-open #menu {
     overflow: auto;
@@ -198,7 +198,7 @@ body.menu-open #menu {
         background-image: -webkit-gradient( linear, left top, left bottom, from(#434B5B), to(#242B39));
         background-image: -moz-linear-gradient(top, #434B5B 0%, #242B39 100%);
         border-bottom: 1px solid #000;
-        border-top: 1px solid #5F6673;  
+        border-top: 1px solid #5F6673;
         color: #fff;
     }
 
@@ -250,7 +250,7 @@ body.menu-open #menu {
         list-style: none;
         min-height: 43px;
         line-height: 40px;
-        padding: 3px 0 3px 8px;     
+        padding: 3px 0 3px 8px;
         background-color: #32394A;
         border-bottom: 1px solid #242A37;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08);
