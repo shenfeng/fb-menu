@@ -6,7 +6,7 @@
 }
 
 html {
-    overflow: scroll;
+    /* overflow: hidden; */
     font-family: Helvetica;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -295,4 +295,10 @@ body.menu-open #menu {
 }
 #menu li#copy p {
     font-weight: 100;
+}
+
+
+.body {
+    height: 400px;
+    overflow-y: scroll;
 }

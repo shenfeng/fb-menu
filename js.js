@@ -8,6 +8,9 @@
   , closeMask  = document.querySelectorAll('#close-mask')[0]
   , trigger    = page.querySelectorAll('.trigger')[0];
 
+  var body_div = document.querySelectorAll('.body')[0];
+  body_div.style.height = (window.innerHeight - 77) + 'px';
+
   var transitionEnd = whichTransitionEvent();
 
   trigger.addEventListener('click', function() {
