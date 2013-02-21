@@ -43,7 +43,7 @@
       shouldOpenMenu = false;
       shouldCloseMenu = false;
 
-      matrix = new WebKitCSSMatrix(page.style.webkitTransform)
+      matrix = new WebKitCSSMatrix(page.style.webkitTransform);
       m41 = matrix['m41'];
     });
 
