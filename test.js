@@ -17,6 +17,16 @@
     // alert('-------');
   });
 
+  $('.story img').click(function () {
+    var $me = $(this).closest('.story');
+    if($me.hasClass('open')) { $me.removeClass('open'); }
+    else {
+      $('.story.open').removeClass('open');
+      $me.addClass('open');
+    }
+    // $(this).parents
+  });
+
   // $page.addEventListener(transitionEnd, function () {
   // });
 
