@@ -1,0 +1,117 @@
+#header {
+    height: 50px;
+    background: red;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#footer {
+    height: 50px;
+    background: blue;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#header h1 { padding: 0; margin: 0; }
+html, body { padding: 0; margin: 0; }
+#page {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    top: 50px;
+/* height: 300px; */
+/* overflow: scroll; */
+}
+
+#menu {
+    position: fixed;
+    background: #cefece;
+    width: 200px;
+    height: 600px;
+/* z-index: 100; */
+}
+
+.menu-open {
+    overflow: hidden;
+}
+
+
+.menu-opening #page, .menu-closing #page,
+.menu-opening #footer, .menu-closing #footer,
+.menu-opening #header, .menu-closing #header {
+    /* -webkit-transition: left 0.2s ease-in; */
+    -webkit-transition-duration: 180ms;
+    -webkit-transition-timing-function: ease-in;
+}
+
+.menu-open #page, .menu-open #header, .menu-open #footer {
+    -webkit-transform: translate3d(200px, 0px, 0px);
+/* -webkit-transform: translate3d(0, 0px, 0px); */
+
+/* left: 200px; */
+
+}
+
+#page, #header, #footer {
+    -webkit-transform: translate3d(0, 0px, 0px);
+}
+
+/* #page.open, #header.open, #footer.open { */
+/* /\* left: 200px; *\/ */
+/* } */
+
+
+#page .story {
+    position: relative;
+    padding: 7px;
+    border-top: 1px solid #E9E9E9;
+    background-color: #fff;
+}
+#page .story > img {
+    position: absolute;
+}
+#page .story .contents {
+    margin-left: 50px;
+}
+#page .story .contents .name {
+    font-size: 14px;
+    color: #3B5998;
+    text-decoration: none;
+}
+#page .story .contents .actions {
+    color: gray;
+    margin: 6px 25px 3px 0;
+
+    font-size: 12px;
+    line-height: 15px;
+}
+#page .story .contents .meta {
+    position: relative;
+    margin-top: 12px;
+    padding: 4px 0 4px 9px;
+    background: #EDEFF4;
+    border-bottom: 1px solid #E5EAF1;
+    border-top: 1px solid #EDEFF4;
+    font-weight: bold;
+    color: #3B5998;
+}
+#page .story .contents .meta::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #EDEFF4 transparent;
+    display: block;
+    width: 0;
+}
+#page .story .contents .meta span {
+    padding-right: 10px;
+}
+#page .story .contents .meta span img {
+    vertical-align: text-bottom;
+}
