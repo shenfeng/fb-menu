@@ -1,0 +1,40 @@
+#page-wrap {
+    display: -webkit-flex;
+    height: 100%;
+    -webkit-flex-direction: column;
+}
+
+#page-wrap > div {
+/* -webkit-flex: 1 auto 1; */
+}
+
+#page-wrap > div:first-child {
+    height: 100px;
+}
+
+#header, #footer {
+    min-height: 50px;
+    max-height: 50px;
+    /* -webkit-order: 1; */
+}
+
+#header {
+    background: red;
+}
+
+#footer {
+    background: blue;
+}
+
+#page {
+    -webkit-flex: 1;
+    height: 400px;
+    overflow: scroll;
+    /* -webkit-order: 0; */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}

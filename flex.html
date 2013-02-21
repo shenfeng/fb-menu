@@ -4,16 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>title</title>
+    <link href="flex.css" rel="stylesheet" type="text/css" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-    <link href="test.css" rel="stylesheet" type="text/css" />
+
   </head>
-  <body id="body">
-    <div id="menu"></div>
-    <div id="page">
-      <div id="header">
-        <h1>MeiweiSQ</h1>
-      </div>
-      <div id="content">
+  <body>
+    <div id="page-wrap">
+      <div id="header">header</div>
+      <div id="page">
         <div class="story">
           <img width="40" height="40" title="" alt="" src="data:image/jpeg;base64,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" />
           <div class="contents">
@@ -39,9 +37,7 @@
       </div>
       <div id="footer">footer</div>
     </div>
-    <!-- <div id="content"></div> -->
     <script src="zepto.js"></script>
-    <script src="test.js"></script>
-    <script src="menu.js"></script>
+    <script src="flex.js"></script>
   </body>
 </html>

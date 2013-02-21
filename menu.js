@@ -89,12 +89,12 @@ function log () {
   function applyTransform (transform) {
     if(transform) {
       page.style.webkitTransform = transform;
-      footer.style.webkitTransform = transform;
-      header.style.webkitTransform = transform;
+      // footer.style.webkitTransform = transform;
+      // header.style.webkitTransform = transform;
     } else {
       page.style.removeProperty('-webkit-transform');
-      footer.style.removeProperty('-webkit-transform');
-      header.style.removeProperty('-webkit-transform');
+      // footer.style.removeProperty('-webkit-transform');
+      // header.style.removeProperty('-webkit-transform');
     }
   }
 
