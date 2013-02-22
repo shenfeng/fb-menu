@@ -17,7 +17,7 @@ function log () {
   "use strict"
   var MENU_WIDTH = 200;
 
-  var $page = $('#page'),
+  var $page = $('#page-wrap'),
       footer = $('#footer')[0],
       header = $('#header')[0],
       page = $page[0],
